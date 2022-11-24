@@ -1,0 +1,13 @@
+prefix=/home/user/proyecto/install
+libdir=/home/user/proyecto/install/lib
+includedir=/home/user/proyecto/install/include
+
+Name: RBDL
+Description: Rigid Body Dynamics Library
+URL: http://rbdl.bitbucket.org/
+Version: 2.6.0
+Requires: eigen3
+Conflicts:
+Libs: -L${libdir} -lrbdl -Wl,-rpath ${libdir}
+Libs.private:
+Cflags: -I${includedir}
